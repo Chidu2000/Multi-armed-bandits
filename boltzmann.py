@@ -8,7 +8,7 @@ def boltzmann_policy(x, tau):
         Input:  x -- 1-dimensional array
         Output: idx -- chosen index
     """
-    
+    x = np.array(x)
     exp_x = np.exp(x / tau)
     
     probabilities = exp_x / np.sum(exp_x)
